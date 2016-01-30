@@ -1,0 +1,11 @@
+---
+layout:default
+title:my blog
+---
+{{page.title}}
+
+	new pages
+
+	{% for post in site.posts %}
+	{{post.date | date_to_string}}{{post.title}}
+	{% end for %}
